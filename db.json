@@ -1,0 +1,65 @@
+
+{
+  "flights": [
+    {
+      "id": 1,
+      "airline": "Gemini Air",
+      "from": "New York",
+      "to": "London",
+      "departureTime": "2025-10-15T09:00:00Z",
+      "arrivalTime": "2025-10-15T21:00:00Z",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "airline": "Starlight Airways",
+      "from": "Los Angeles",
+      "to": "Tokyo",
+      "departureTime": "2025-11-20T14:00:00Z",
+      "arrivalTime": "2025-11-21T19:00:00Z",
+      "price": 800
+    },
+    {
+      "id": 3,
+      "airline": "Phoenix Airlines",
+      "from": "London",
+      "to": "New York",
+      "departureTime": "2025-10-18T11:00:00Z",
+      "arrivalTime": "2025-10-18T23:00:00Z",
+      "price": 550
+    }
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "name": "The Grand Plaza",
+      "location": "New York",
+      "pricePerNight": 250,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "The Royal London",
+      "location": "London",
+      "pricePerNight": 300,
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Shibuya Crossing Hotel",
+      "location": "Tokyo",
+      "pricePerNight": 200,
+      "rating": 4.2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Alex Doe",
+      "email": "alex.doe@example.com",
+      "bio": "Frequent traveler and foodie. Always looking for the next adventure.",
+      "location": "New York, USA",
+      "avatar": "https://i.pravatar.cc/150?u=alexdoe"
+    }
+  ]
+}
