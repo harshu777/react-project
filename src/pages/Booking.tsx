@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Typography, Button, Paper, Grid, Snackbar } from '@mui/material';
+import { Typography, Button, Paper, Stack, Snackbar } from '@mui/material';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import hotels from '../data/hotels.json';
 import { handleRazorpayPayment } from '../utils/razorpay';
@@ -45,15 +45,15 @@ const Booking = () => {
       <Typography variant="h4" gutterBottom>
         Booking Confirmation
       </Typography>
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+      <Stack direction="row" spacing={4}>
+        <Stack flex={1}>
           <Typography variant="h5">{hotel.name}</Typography>
           <Typography variant="body1">{hotel.location}</Typography>
           <Typography variant="h6" style={{ marginTop: '1rem' }}>
             Price: ${hotel.price}/night
           </Typography>
-        </Grid>
-        <Grid item xs={12} md={6} style={{ textAlign: 'center' }}>
+        </Stack>
+        <Stack flex={1} alignItems="center">
           <Button
             variant="contained"
             color="primary"
@@ -62,8 +62,8 @@ const Booking = () => {
           >
             Pay with Razorpay
           </Button>
-        </Grid>
-      </Grid>
+        </Stack>
+      </Stack>
       <Snackbar
         open={paymentStatus === 'success'}
         autoHideDuration={6000}
