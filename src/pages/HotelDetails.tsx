@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Typography, Grid, Card, CardMedia, CardContent, Button, Chip } from '@mui/material';
+import { Typography, Box, Card, CardMedia, CardContent, Button, Chip } from '@mui/material';
 import hotels from '../data/hotels.json';
 
 const HotelDetails = () => {
@@ -16,8 +16,8 @@ const HotelDetails = () => {
       <Typography variant="h4" gutterBottom>
         {hotel.name}
       </Typography>
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+      <Box sx={{ display: 'flex', gap: 4 }}>
+        <Box sx={{ flex: '1 1 50%' }}>
           <Card>
             <CardMedia
               component="img"
@@ -26,8 +26,8 @@ const HotelDetails = () => {
               alt={hotel.name}
             />
           </Card>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </Box>
+        <Box sx={{ flex: '1 1 50%' }}>
           <Card>
             <CardContent>
               <Typography variant="h6">Location: {hotel.location}</Typography>
@@ -55,8 +55,8 @@ const HotelDetails = () => {
               </Button>
             </CardContent>
           </Card>
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </>
   );
 };
